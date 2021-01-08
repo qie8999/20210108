@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            width: 100px;
+            height: 100px;
+            
+        }
+        .red
+        {
+            background-color: red;
+            left: 10px;
+            top: 10px;
+        }
+        .green
+        {
+            background-color: green;
+            position: relative;
+            /* 원래 있어야하는 자리에서 50x50이동 */
+            left: 50px;
+            top: 50px;
+        }
+        .blue
+        {
+            background-color: blue;
+            position: fixed;/*절대값*/
+            
+            left: 10px;
+            top: 10px;
+        }
+        .pink
+        {
+            background-color: pink;
+            position: absolute;
+            /* abs는 부모가 static이 아닌경우 부모표를 절대좌표로 잡음 */
+            left: 10px;
+            top: 10px;
+            width: 30px;
+            height: 30px;
+        
+        }
+        .blue
+        {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="box red"></div>
+    <div class="box green">
+        <div class="box pink"></div>
+        <!-- 박스를 굳이 쓰지 않아도됨 -->
+    </div>
+    <div class="box blue"></div>
+    <div class="box red">두번째
+        <div class="box pink"></div>
+    </div>
+</body>
+</html>

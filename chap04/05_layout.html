@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 960px;
+            margin: 0 auto;/*가운데 정렬*/
+            
+        }
+        #aside
+        {
+            width: 200px;
+            float: left;
+            background-color: hotpink;
+        }
+        #section
+        {
+            width: 740px;
+            float: right;
+            background-color: aqua;
+        }
+        #wrap
+        {
+            overflow: hidden;
+            /*지정해주면 footer가 빨려들어가지 않는다*/
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 수평정렬공식: 자손에 float를 적용하면 
+        부모의 overflow속성에 hidden키워드를 적용 -->
+        <div id="header">
+            <h1>Header</h1></div>
+        <div id="navigation">
+            <h1>Navigation</h1>
+        </div>
+        <div id="wrap">
+            <div id="aside">
+                <h1>Aside</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, esse?</p>
+            </div>
+            <div id="section">
+                <h1>Section</h1>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <p> 帝才雷身应快往尽秦，只己未我正说为破逃到小有贼明张法间，是有无死，人杨夫战新笔感招而沫谓生着韩使如，国天死承，人王了搏的少况我卡，前屯县，人要才由是禀承解句么相至在圣，由时纯郭思只，明瞠会哥惜后老，书韩尘老评至应，而归招的掉曾，才磊之韩他活，则可妙不李揽雷吞尚司商时切纯变的为助融，尝洪已往承位洋战，妙程们低说而是洪，妙有羊才大场何大以小小身相他到恨不有，新范下一是揽盲卞，承之谋场圣，后请作匹骨看善，慧兼负小，而王办韩啦人洪俭太快陛俭我，临希山韩定，保巴婵善略说李瞠后木骨被单龄宫们关，同得不尝念命仁憾视备命挟法耳谋郭是，责杨乐感仍为应便就肯俭徒，谓珍予则绪仄韩居起天韩放关者，招乐得又牙种嗣哥许。 尺天量是使却，人定有常君安逃，君冈屯谢同孔榜投，皇恶我一作之普在我舟什里互六俭处今，久国他九恶哉丹足土极锐尝仍，挟侯子今她更应小好感洞年当勉怒，么即文，和起可，到支家导哉生拆平看了风而秦帝台或人们，生马自词清母逃逃么厄郭都小，承是的牙乌雷王见，快罪则反程文掉未范又车太郭往因，天身即了失友文几尝，密韩子为，五娘易鲜守的说主则国易，土派绛的降帮后为什馆作才，笔狂往败禀冈地见又落李在为航，责会为我国的。</p>
+            </div>
+        </div>
+        <div id="footer">
+            <h1>Footer</h1>
+        </div>
+
+</body>
+</html>

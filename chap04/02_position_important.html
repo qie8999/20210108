@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+
+    }
+
+    .red {
+        background-color: red;
+        left: 10px;
+        top: 10px;
+        /* position: absolute; */
+    }
+
+    .green {
+        background-color: green;
+        left: 50px;
+        top: 50px;
+    }
+
+    .blue {
+        background-color: blue;
+        left: 100px;
+        top: 100px;
+    }
+    body>div{
+        /* body div 이렇게 하면 후손까지 다 선택됨 */
+        border :10px solid black;
+        height: 100px;
+        /* 높이를 잡아줘야 부모태그를 중심으로 정렬 */
+        position: relative;
+        /* div를 부모태그로 인식 */
+        /* overflow: hidden; */
+        overflow: scroll;
+    }
+</style>
+
+<body>
+    <h1>衣词么一。</h1>
+    <div>
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+    </div>
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, eos?</h1>
+</body>
+
+</html>
